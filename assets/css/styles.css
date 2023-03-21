@@ -108,6 +108,7 @@ button {
 /* ===HERO */
 .hero {
     margin-top: 30px;
+    padding-bottom: 79px;
 }
 
 .hero__body {
