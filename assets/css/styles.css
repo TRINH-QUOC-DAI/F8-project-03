@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #1ebfc1;
+    --color-heading: #0d1111;
 }
 
 html,
@@ -49,6 +50,28 @@ a {
 
 button {
     cursor: pointer;
+}
+
+.features__title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #767e7e;
+}
+
+.features__heading {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.33;
+    color: var(--color-heading);
+}
+
+.features__desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
 }
 
 /* ===HEADER */
@@ -331,4 +354,329 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ===FEATURES */
+.features {
+    background: #ccc;
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+.features__body {
+    width: 1024px;
+}
+
+.features .head {
+    width: 590px;
+}
+/* -------------- */
+
+/* ----------- */
+
+.features__list {
+    display: flex;
+    margin-top: 80px;
+}
+
+.features__item {
+    flex: 1;
+}
+
+.features__item__img {
+    width: 102px;
+    height: 106px;
+    display: block;
+    background: #ccc;
+}
+
+.features__item__title {
+    margin-top: 26px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--color-heading);
+}
+
+.features__item__desc {
+    margin-top: 16px;
+    min-width: 168px;
+    max-width: 224px;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    color: #9da6a5;
+}
+
+/* ===COURSES */
+.courses {
+    background: lightblue;
+    margin-top: 70px;
+    padding: 30px 0 154px 0;
+}
+
+.courses__desc--widht {
+    width: 525px;
+}
+
+.courses__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses__view-all {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.78;
+    text-decoration-line: underline;
+    color: #1ebfc1;
+}
+
+.courses__list {
+    display: flex;
+    gap: 47px;
+    margin-top: 79px;
+}
+
+.courses__item {
+    position: relative;
+    flex: 1;
+}
+
+.courses__item__img-link {
+    position: relative;
+}
+
+.courses__item__img {
+    width: 100%;
+    height: 393px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #ccc;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #d0efed;
+    opacity: 0.35;
+}
+
+.courses__item__position {
+    position: absolute;
+    left: 17px;
+    right: 17px;
+    top: calc(393px - 71px);
+    padding: 18px 25px 29px;
+    background: #fff;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    min-height: 195px;
+}
+
+.courses__item__title-link {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--color-heading);
+}
+
+.courses__item__price {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.courses__item__price--strong {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--color-heading);
+}
+
+.courses__item__desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9da6a5;
+}
+
+.courses__item__desc--mt {
+    margin-top: 6px;
+}
+
+.courses__item__route {
+    margin-top: 18px;
+    padding-left: 10px;
+}
+
+.course__item__position-dot {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.courses__item__desc--dot::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    left: -10px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+/* ===COUNT */
+.count {
+    margin-top: 205px;
+    padding: 30px 0;
+    background-color: lightcoral;
+}
+
+.count__list {
+    display: flex;
+    justify-content: space-between;
+    width: 826px;
+    margin: 0 auto;
+}
+
+.count__item {
+    max-width: 161px;
+    background: #ccc;
+}
+
+.count__item__desc {
+    margin-top: 11px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
+    text-align: center;
+}
+
+.count__item__desc-strong {
+    display: block;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+/* ===TESTIMONIAL */
+.testimonial {
+    margin-top: 204px;
+    padding: 30px 0;
+    background: lightgreen;
+}
+
+.testimonial__body {
+    display: flex;
+}
+
+.testimonial__infor {
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infor__blockqoute-icon {
+    margin-top: 37px;
+}
+
+.testimonial__infor blockquote {
+    margin-top: 27px;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5d6564;
+}
+
+.testimonial__infor .infor__desc {
+    margin-top: 33px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.testimonial__infor .infor__desc-blod {
+    font-weight: 500;
+    color: #070707;
+}
+
+.testimonial__infor .infor__actions {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__infor .infor__actions-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.testimonial__figure {
+    position: relative;
+    margin-left: 72px;
+}
+
+.testimonial__figure .testimonial__img {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    display: block;
+    background: #2ac9bf;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.testimonial__img:nth-child(4),
+.testimonial__img:nth-child(5) {
+    width: 92px;
+    height: 92px;
+}
+
+.testimonial__img:nth-child(6) {
+    width: 235px;
+    height: 235px;
+}
+
+.testimonial__img:nth-child(1) {
+    bottom: 145px;
+    left: 0;
+}
+
+.testimonial__img:nth-child(2) {
+    bottom: 0;
+    left: 212px;
+}
+
+.testimonial__img:nth-child(3) {
+    bottom: 29px;
+    left: 569px;
+}
+
+.testimonial__img:nth-child(4) {
+    top: 0;
+    left: 144px;
+}
+
+.testimonial__img:nth-child(5) {
+    top: 19px;
+    left: 569px;
+}
+
+.testimonial__img:nth-child(6) {
+    top: 107px;
+    left: 273px;
 }
