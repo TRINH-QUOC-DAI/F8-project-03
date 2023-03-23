@@ -55,7 +55,7 @@
         <!-- Styles CSS  -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body style="height: 10000px">
+    <body>
         <!-- ===HEADER -->
         <header class="header">
             <section class="content">
@@ -98,8 +98,8 @@
                     <div class="hero__body">
                         <article class="infor">
                             <p class="infor__top">😎 EASY LEAENING PLATFORM</p>
-                            <h1 class="infor__title">Words learner come here.</h1>
-                            <p class="infor__desc">
+                            <h1 class="infor__title line-clamp">Words learner come here.</h1>
+                            <p class="infor__desc line-clamp" style="--line-clamp: 3">
                                 Build skills with courses, certificates, and get online knowledge
                                 from our world-class platform.
                             </p>
@@ -144,10 +144,10 @@
                     <section class="features__body">
                         <section class="head">
                             <p class="features__title">F E A T U R E S</p>
-                            <h2 class="features__heading">
+                            <h2 class="features__heading line-clamp">
                                 We are providing suitable features for students.
                             </h2>
-                            <p class="features__desc">
+                            <p class="features__desc line-clamp">
                                 Read our awesome feature that is absolutely suit for you. Explore
                                 the feature and know the best.
                             </p>
@@ -199,7 +199,10 @@
                         <p class="features__title">C O U R S E S</p>
                         <h2 class="features__heading">Popular Courses</h2>
                         <div class="courses__row">
-                            <p class="features__desc courses__desc--widht">
+                            <p
+                                class="features__desc courses__desc--widht line-clamp"
+                                style="--line-clamp: 3"
+                            >
                                 Check out our most poular courses that suit for you. Here you can
                                 find your favourite one.
                             </p>
@@ -403,6 +406,132 @@
                     </div>
                 </div>
             </section>
+            <!-- ===REGISTER -->
+            <section class="register">
+                <div class="content">
+                    <div class="register__body">
+                        <article class="register__infor">
+                            <h2 class="features__heading line-clamp">Ready to Get Admit</h2>
+                            <p class="count__item__desc register__desc">
+                                Create your account and Boost your Career.
+                            </p>
+                        </article>
+                        <a href="#!" class="btn register__btn">Get Started</a>
+                    </div>
+                </div>
+            </section>
+            <!-- ===FOOTER -->
+            <footer class="footer">
+                <div class="content">
+                    <section class="footer__body">
+                        <section class="head">
+                            <a class="footer__logo" href="#">
+                                <img src="./assets/img/logo/Logo1.svg" alt="Besnik." class="logo" />
+                            </a>
+                            <div class="footer__column">
+                                <h4 class="footer__heading">Company</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#!">About</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#!">Careers</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#!">Press</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__column">
+                                <h4 class="footer__heading">Community</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#!">Team Plans</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#!">Blog</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#!">Students</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#!">Schoolarships</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__column">
+                                <h4 class="footer__heading">Teaching</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#!">Become a teacher</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#!">Teaching academy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__column">
+                                <h4 class="footer__heading">Be social</h4>
+                                <ul class="footer__list social__list">
+                                    <li class="footer__item cosial__item">
+                                        <a href="#!"
+                                            ><div>
+                                                <img
+                                                    src="./assets/img/icon/twitter.svg"
+                                                    alt="Twitter"
+                                                    class="social"
+                                                />
+                                            </div>
+                                            Twitter</a
+                                        >
+                                    </li>
+                                    <li class="footer__item cosial__item">
+                                        <a href="#!">
+                                            <div>
+                                                <img
+                                                    src="./assets/img/icon/facebook.svg"
+                                                    alt="Facebook"
+                                                    class="social"
+                                                />
+                                            </div>
+                                            Facebook</a
+                                        >
+                                    </li>
+                                    <li class="footer__item cosial__item">
+                                        <a href="#!">
+                                            <div>
+                                                <img
+                                                    src="./assets/img/icon/instagram.svg"
+                                                    alt="Instagram"
+                                                    class="social"
+                                                />
+                                            </div>
+                                            Instagram</a
+                                        >
+                                    </li>
+                                    <li class="footer__item cosial__item">
+                                        <a href="#!">
+                                            <div>
+                                                <img
+                                                    src="./assets/img/icon/linkedin.svg"
+                                                    alt="Linkedin"
+                                                    class="social"
+                                                />
+                                            </div>
+                                            Linkedin</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="copyright">
+                            <p class="copyright__text">
+                                © Copyright 2020 by Mayad Ahmed. All right reserved.
+                            </p>
+                        </section>
+                    </section>
+                </div>
+            </footer>
         </main>
     </body>
 </html>
